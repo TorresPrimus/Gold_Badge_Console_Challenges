@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{99BCB24C-033B-40D0-A5B8-59E81DEF354B}</ProjectGuid>
+    <ProjectGuid>{6FFF3681-82C1-4E05-83CD-6D7511D1698D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Challenge_One_Console</RootNamespace>
-    <AssemblyName>Challenge_One_Console</AssemblyName>
+    <RootNamespace>ChallengeTwo.Console</RootNamespace>
+    <AssemblyName>ChallengeTwo.Console</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -51,9 +51,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Challenge_One_Repo\ChallengeOne.Repo.csproj">
-      <Project>{cff7cbce-5760-4faa-82ff-1176e2ecf3d9}</Project>
-      <Name>ChallengeOne.Repo</Name>
+    <ProjectReference Include="..\ChellengeTwo.Repo\ChellengeTwo.Repo.csproj">
+      <Project>{8853eec0-285f-4be1-ad0e-0507396ff094}</Project>
+      <Name>ChellengeTwo.Repo</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

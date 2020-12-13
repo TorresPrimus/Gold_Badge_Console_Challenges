@@ -44,5 +44,13 @@ namespace Challenge_One_Tests
 
             Assert.AreEqual(shouldUpdate, updateResult);
         }
+
+        [TestMethod]
+        public void RemoveIngredient_ShouldReturnTrue()
+        {
+            bool deleteResult = _repo.RemoveIngredient(_content.IngredientName);
+
+            Assert.IsTrue(deleteResult);
+        }
     }
 }

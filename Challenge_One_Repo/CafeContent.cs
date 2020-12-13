@@ -16,10 +16,10 @@ namespace Challenge_One_Repo
 
         public CafeContent() { }
 
-        public CafeContent(int mealNumber, string meanName, string description, List<IngredientsContent> listOfIngredients, double price)
+        public CafeContent(int mealNumber, string mealName, string description, List<IngredientsContent> listOfIngredients, double price)
         {
             MealNumber = mealNumber;
-            MealName = MealName;
+            MealName = mealName;
             Description = description;
             ListOfIngredients = listOfIngredients;
             Price = price;
