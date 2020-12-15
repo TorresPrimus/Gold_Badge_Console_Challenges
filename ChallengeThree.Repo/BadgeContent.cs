@@ -11,11 +11,11 @@ namespace ChallengeThree_Repo
     {
         public int BadgeID { get; set; }
 
-        public List<DoorContent> ListOfDoors { get; set; }
+        public List<string> ListOfDoors { get; set; }
 
         public BadgeContent() { }
 
-        public BadgeContent(int badgeID, List<DoorContent> listOfDoors)
+        public BadgeContent(int badgeID, List<string> listOfDoors)
         {
             BadgeID = badgeID;
             ListOfDoors = listOfDoors;

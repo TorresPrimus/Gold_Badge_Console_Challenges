@@ -10,6 +10,7 @@ namespace ChallengeThree_Repo
     public class BadgeRepo
     {
         private Dictionary<int, BadgeContent> _dictionBadge = new Dictionary<int, BadgeContent>();
+        private BadgeContent _badgeInfo = new BadgeContent();
 
 
         //create
@@ -22,6 +23,11 @@ namespace ChallengeThree_Repo
         public Dictionary<int, BadgeContent> GetDictList()
         {
             return _dictionBadge;
+        }
+
+        public BadgeContent GetBadgeContent()
+        {
+            return _badgeInfo;
         }
 
         //update

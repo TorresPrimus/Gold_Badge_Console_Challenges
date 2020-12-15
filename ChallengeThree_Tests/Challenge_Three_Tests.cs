@@ -13,7 +13,7 @@ namespace ChallengeThree_Tests
         private BadgeRepo _badgeRepo;
         private DoorContent _doorContent;
         Dictionary<int, BadgeContent> _dict = new Dictionary<int, BadgeContent>();
-        List<DoorContent> _list = new List<DoorContent>();
+        List<string> _list = new List<string>();
 
         [TestInitialize]
         public void DefaultValues()
@@ -21,7 +21,8 @@ namespace ChallengeThree_Tests
             _content = new BadgeContent(1,_list);
             _badgeRepo = new BadgeRepo();
             _doorContent = new DoorContent("Whiskey");
-            _list.Add(_doorContent);
+            string a = "alpha";
+            _list.Add(a);
             _badgeRepo.AddNewBadge(_content);
             _dict.Add(1, _content);
         }
