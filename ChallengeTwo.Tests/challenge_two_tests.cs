@@ -27,6 +27,7 @@ namespace ChallengeTwo.Tests
             ClaimContent torres = new ClaimContent(1, TypesOfClaims.Car, "Car Accident on 465.", 400, new DateTime(2018,4,25), new DateTime(2018,4,27), true);
 
             _repo.AddClaim(torres);
+            var expected = _repo.GetClaimById(1);
 
             Assert.IsNotNull(torres);
         }

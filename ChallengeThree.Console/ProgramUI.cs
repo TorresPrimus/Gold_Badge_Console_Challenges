@@ -97,7 +97,7 @@ namespace ChallengeThree_Console
             GetAllBadges();
             //return badge number and list of doors accessible
             Console.WriteLine("\nWhat badge would you like to update:");
-            string badgeAsString = Console.ReadLine();
+            string badgeAsString = Console.ReadLine().ToLower();
             int userInput = int.Parse(badgeAsString);
             BadgeContent pulledID = _badgeRepo.GetBadgeContentByID(userInput);
 
@@ -106,13 +106,13 @@ namespace ChallengeThree_Console
             Console.WriteLine($"What would you like to do with {badgeAsString}:\n" +
                 $"1. Add a Door\n" +
                 $"2. Remove a Door");
-            string menuChoice = Console.ReadLine();
+            string menuChoice = Console.ReadLine().ToLower();
 
             //add door
             if (menuChoice == "1")
             {
                 Console.WriteLine("What door would you like to add?");
-                string userDoor = Console.ReadLine();
+                string userDoor = Console.ReadLine().ToLower();
                 pulledID.ListOfDoors.Add(userDoor);
             }
 
@@ -120,7 +120,7 @@ namespace ChallengeThree_Console
             else if (menuChoice == "2")
             {
                 Console.WriteLine("What door would you like to remove?");
-                string userRemove = Console.ReadLine();
+                string userRemove = Console.ReadLine().ToLower();
                 pulledID.ListOfDoors.Remove(userRemove);
             }
 
