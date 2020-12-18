@@ -10,25 +10,31 @@ namespace ChallengeFourRepo
     {
         public enum Events
         {
-            Golf = 0,
+            Amusement_Park = 1,
             Bowling,
-            Amusement_Park,
-            Concert
+            Concert,
+            Golf
         }
         public Events EventType { get; set; }
         public int AttendanceNumber { get; set; }
         public DateTime DateOfEvent { get; set; }
         public double CostPerPerson { get; set; }
-        public double TotalCost { get; set; }
+        public double TotalCost 
+        {
+            get {
+                double totalCost = CostPerPerson * AttendanceNumber;
+                return totalCost;
+            }
+        }
         
         public OutingContent() {}
-        public OutingContent(Events eventType, int attendanceNumber, DateTime dateOfEvent, double costPerPerson, double totalCost)
+        public OutingContent(Events eventType, int attendanceNumber, DateTime dateOfEvent, double costPerPerson)
         {
             EventType = eventType;
             AttendanceNumber = attendanceNumber;
             DateOfEvent = dateOfEvent;
             CostPerPerson = costPerPerson;
-            TotalCost = totalCost;
+            
         }
 
     }
